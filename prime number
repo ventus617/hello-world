@@ -1,0 +1,16 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    cout<< "The degree centigrade is="<<"\n";
+    float f, c, a;
+    cin>> a;
+    f = 64;
+    c = (5.0 / 9) * (f - 32);
+    a = c;
+    cout << a;
+    return  0;
+}

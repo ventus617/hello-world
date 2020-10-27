@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Input 3 float:" << "\n";
+    double a, b, c, delta, x1, x2;
+    cin >> a >> b >> c;
+    delta = b * b - 4 * a * c;
+    if (delta > 0)
+    {
+        x1 = (-b + sqrt(delta)) / (2 * a);
+        x2 = (-b - sqrt(delta)) / (2 * a);
+        cout << "Two root\n" << "x1=" << x1 << ends << "x2=" << x2;
+    }
+    else
+        if (delta == 0)
+        {
+            x1 = -b / (2 * a);
+            cout << "One root" << endl << "x1=x2=" << x1;
+        }
+        else
+        {
+            cout << "Null";
+        }
+    return 0;
+}

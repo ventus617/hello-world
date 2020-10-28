@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double a, b, d;
+    char c;
+    cin >> a >> c >> b;
+    if (c == '+')
+    {
+        d = a + b;
+        cout << "The value is" << endl << d;
+    }
+    else
+        if (c == '-')
+        {
+            d = a - b;
+            cout << "The value is" << endl << d;
+
+        }
+        else
+            if (c == '/')
+            {
+                d = a / b;
+                cout << "The value is" << endl << d;
+
+            }
+            else
+                if (c == '*')
+                {
+                    d = a * b;
+                    cout << "The value is" << endl << d;
+                }
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{ 
+	double a, b, c;
+	a = 10;
+	b = 3;
+	c = a / b;
+	cout << "The value is="<<endl;
+	cout << c << endl;
+	cout << setprecision(3) << c << endl;
+	cout << setiosflags(ios::fixed) << setprecision(8) << c << endl;
+	cout << scientific << c;
+	return 0;
+}

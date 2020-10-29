@@ -1,0 +1,24 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	double r, n, p, x;
+	printf("请输入我国GDP年增长率与所需计算的年时间\n");
+	scanf_s("%lf %lf", &r, &n);
+	x = (1 + r);
+	p = pow(x, n);
+	printf("我国的GDP总值与现在比增长p=%lf",p);
+}
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	double r, n, p, x;
+	cout << "请输入我国GDP年增长率与所需计算的年时间\n";
+	cin>>r>>n;
+	x = (1 + r);
+	p = pow(x, n);
+    cout<<"我国的GDP总值与现在比增长p="<<p;
+}

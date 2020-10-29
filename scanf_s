@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double a,r, h, C, s, S, v;
+    (void)scanf_s("r=%lf,h=%lf",&r,&h);
+    a = 3.1415; 
+    C = 2 * r * a;
+    s = a * pow(r, 2);
+    S = 4 * a * pow(r, 2);
+    v = a * h * pow(r, 2);
+    printf("圆的周长C=%.2lf\n",C);        //  圆的周长
+    printf("圆的面积s=%.2lf\n",s);        //  圆的面积
+    printf("圆球的表面积S=%.2lf\n",S);        //  圆球的表面积
+    printf("圆柱的体积v=%.2lf\n",v);        //  圆柱的体积
+    return 0;
+}

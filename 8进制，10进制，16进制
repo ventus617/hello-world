@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+int main()
+{
+	cout << "请输入一个整数:" << endl;
+	int x;
+	cin >> x;
+	cout << "x的8进制表示为: " << oct << x << endl;
+	cout << "x的10进制表示为: " << dec << x << endl;
+	cout << "x的16进制表示为: " << hex << x << endl;
+	return 0;
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	printf("请输入一个整数：");
+	(void)scanf_s("%d", &a);
+	printf("%o\n", a);
+	printf("%d\n", a);
+	printf("%x",a);
+	return 0;
+}

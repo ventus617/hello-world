@@ -1,0 +1,95 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int m, n,i,max,min,q;
+    cout << "Please Enter 2 numbers\n";
+    cin>>m>>n;
+    max = 0;
+    min = 0;
+    if (m > n)
+    {
+        q = n;
+        n = m;
+        m = q;
+        
+    }
+    i = 1;
+    while(i<=m)
+    {
+        if (m % i == 0 && n % i == 0)
+        {
+            max = i;
+            i++;
+        }
+        else
+            i++;
+    }
+    min = m * n / max;
+    cout << "max is:"<<max<<endl<<"min is:"<<min;
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int m, n,i,max,min,q;
+    cout << "Please Enter 2 numbers\n";
+    cin>>m>>n;
+    max = 0;
+    min = 0;
+    if (m > n)
+    {
+        q = n;
+        n = m;
+        m = q;
+        
+    }
+    i = 1;
+    do
+    {
+        if (m % i == 0 && n % i == 0)
+        {
+            max = i;
+            i++;
+        }
+        else
+            i++;
+    } while (i <= m);                             //do...while() ...为循环体 （）为再次进行循环的条件
+    min = m * n / max;
+    cout << "max is:"<<max<<endl<<"min is:"<<min;
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int m, n,i,max,min,q;
+    cout << "Please Enter 2 numbers\n";
+    cin>>m>>n;
+    max = 0;
+    min = 0;
+    if (m > n)
+    {
+        q = n;
+        n = m;
+        m = q;
+        
+    }
+    i = 1;
+    for (i;i <= m;i++)                                   //for结构为（循环变量初值；循环条件；循环变量增值） 一般用于知道执行次数，如此题为m次
+    {
+        if (m % i == 0 && n % i == 0)
+            max = i;
+    }
+    min = m * n / max;
+    cout << "max is:"<<max<<endl<<"min is:"<<min;
+    return 0;
+}

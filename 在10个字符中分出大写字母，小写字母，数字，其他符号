@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>                       //万能头文件
+using namespace std;
+
+int main()
+{   
+    int i,uc,lc,dc,oc;
+    uc = 0;lc = 0;dc = 0;oc = 0;
+    char c;
+    for (i = 1;i <= 10;i++)
+    {
+        (void)scanf_s("%c",&c);
+        if (c == '\n')
+            break;                                  //scanf 能接受空格与回车一类的字符 cin不可以
+        if (c >= 'A' && c <= 'Z')
+            uc++;
+        else if (c >= 'a' && c <= 'z')
+            lc++;
+        else if (c >= '0' && c <= '9')
+            dc++;
+        else 
+            oc++;
+    }
+    cout << "uc is=" << uc<<endl;
+    cout << "lc is=" << lc<<endl;
+    cout << "dc is=" << dc<<endl;
+    cout << "oc is=" << oc << endl;
+    return 0;
+}

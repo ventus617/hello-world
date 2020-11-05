@@ -26,6 +26,8 @@ int main()
         case 9:
         case 11:cout << "该月份的天数为30天";
             break;
+            default:
+            break;
         }
     }
     else
@@ -45,6 +47,8 @@ int main()
         case 6:
         case 9:
         case 11:cout << "该月份的天数为30天";
+            break;
+            default:
             break;
         }
 

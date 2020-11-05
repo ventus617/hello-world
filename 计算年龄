@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>                       //万能头文件
+using namespace std;
+
+int main()
+{   
+    cout << "Please Enter Your birthday" << endl;
+    cout << "Like:2000.01.02" << endl;
+    int a, b, c;
+    (void)scanf_s("%d.%d.%d", &a, &b, &c);
+    cout << "Please Enter Your age" << endl;
+    cout << "Like:2010.02.03" << endl;
+    int d, e, f;
+    (void)scanf_s("%d.%d.%d", &d, &e, &f);
+    d = d - a;
+    e = e - b;
+    f = f - c;
+    if (e < 0)
+    {
+        d = d - 1;
+        e = e + 12;
+    }
+    printf("你的真实年龄是 %d岁零%d个月",d, e);
+    return 0;
+}

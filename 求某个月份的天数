@@ -1,0 +1,52 @@
+#include<bits/stdc++.h>                       //万能头文件
+using namespace std;
+
+int main()
+{   
+    printf("Please Enter\n");
+    printf("Like 2000.01\n");
+    int a, b;
+    (void)scanf_s("%d.%d", &a, &b);
+    if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0)
+    {
+        switch (b)
+        {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:cout << "该月份的天数为31天";
+            break;
+        case 2:cout << "该月份的天数为28天";
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:cout << "该月份的天数为30天";
+            break;
+        }
+    }
+    else
+        switch (b)
+        {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:cout << "该月份的天数为31天";
+            break;
+        case 2:cout << "该月份的天数为29天";
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:cout << "该月份的天数为30天";
+            break;
+        }
+
+    return 0;
+}

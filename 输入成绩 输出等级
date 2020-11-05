@@ -26,6 +26,7 @@ int main()
     case 10:cout <<"Your grade is A";
         break;
     default:cout << "Null";
+        
     }
 
     return 0;

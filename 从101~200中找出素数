@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>                       //万能头文件
+using namespace std;
+
+int main()
+{   
+    cout << "Please Enter\n";
+    int n, i, p, k;
+    for (n = 101;n <= 199;n = n + 2)
+    {
+        k = sqrt(n);
+        for (i = 2;i <= k;i++)
+        {
+            if (n % i == 0)
+            {
+                p = 0;
+                break;
+            }
+            else
+                p = 1;
+        }
+        if (p == 1)
+        {
+            cout << n << " is a prime" << endl;
+            continue;
+        }
+        else
+        {
+            cout << n << " is not a prime" << endl;
+            continue;
+        }
+    }
+
+    return 0;
+}

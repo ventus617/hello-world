@@ -8,9 +8,12 @@ int main()
     char c;
     for (i = 1;i <= 10;i++)
     {
-        (void)scanf_s("%c",&c);
+        (void)scanf_s("%c",&c);                            //char name[10];
+                                                           //scanf_s("%s", name); 
+                                                           //会出现“警告 C6064 缺少“scanf_s”的整型参数(对应于转换说明符“2”)‘” ，解决方法为在读取时，设置读取字符长度：
+                                                           //scanf_s("%s", name,10);
         if (c == '\n')
-            break;                                  //scanf 能接受空格与回车一类的字符 cin不可以
+            break;                                         //scanf 能接受空格与回车一类的字符 cin不可以
         if (c >= 'A' && c <= 'Z')
             uc++;
         else if (c >= 'a' && c <= 'z')

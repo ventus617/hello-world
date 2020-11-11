@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>                       //万能头文件
+using namespace std;
+
+int main()
+{
+	int n, m,j,i;
+	cout << "以下是满足水仙花数的三位数\n";
+	for (j = 100;j <= 999;j++)
+	{   
+		n = j / 100;
+		m = (j%100)/10;
+		i = j % 10;
+		if (j == pow(n, 3) + pow(m, 3) + pow(i, 3))
+		{
+			cout << j << endl;
+			continue;
+		}
+	}
+
+	return 0;
+}

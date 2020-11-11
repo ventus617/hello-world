@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>                       //万能头文件
+using namespace std;
+
+int main()
+{
+	int i, sum, p,j;
+	double average;
+	sum = 0;
+	cout << "请输入捐款" << endl;
+	for (i = 1;i <= 1000;i++)
+	{
+		cin >> p;
+		sum += p;
+		if (sum >= 100000)
+			break;
+		else if (sum < 100000)
+			continue;
+	}
+	average = sum / i;
+	cout << "全校捐款的人数为" << i << "平均一人捐款数为" << average << endl;
+	return 0;
+}

@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>                       //万能头文件
+using namespace std;
+
+int main()
+{
+	int i, j;
+	for (i = 1;i <= 4;i++)
+	{
+		for (j = 1;j <= 5;j++)
+		{
+			cout << j * i<<"\t" ;
+			if (j % 5 == 0)
+				cout << endl;
+		}
+	}
+
+	return 0;
+}

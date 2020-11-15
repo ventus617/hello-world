@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>                       //万能头文件
+using namespace std;
+
+int main()
+{
+	int i, j;
+	char A, B, C;
+	for(A='X';A<='Z';A++)  //这里ABC可以互换，表达的含义就是3名选手ABC对应3名选手XYZ
+		for (B = 'X';B <= 'Z';B++)
+		{
+			if(B!=A)  //就是说明不能比赛相同人员
+				for (C = 'X';C <= 'Z';C++)
+				{
+					if (A != C && B != C)
+						if (A!= 'X' && C != 'X' && C != 'Z')  //这里附加成立条件
+							printf("A和%c比赛，B和%c比赛，C和%c比赛", A, B, C);  
+				}
+
+		}
+			
+	return 0;
+}

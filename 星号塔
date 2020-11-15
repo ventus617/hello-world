@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>                       //万能头文件
+using namespace std;
+
+int main()
+{
+	int i, j,n;
+	char c;
+	c = '*';
+    for (i = 1;i <= 4;i++)           //4是出现*的最多的那一行的行数（以下用max表示)
+	{
+		for (j = 1;j <= 4-i;j++)
+		{
+			cout << " ";
+			
+		}
+		for (n = 1;n <= 2 * i - 1;n++)
+			{
+				cout << c;
+			}
+		cout << endl;
+	}
+	for (i = 1;i <= 3;i++)           //3是max-1
+	{
+		for (j = 1;j <= i;j++)
+		{
+			cout << " ";
+			
+		}
+		for (n = 1;n <=2*3-(2*i-1);n++)     //这是利用反向输出时，2*max减去第一行为最大一行的*数
+			{
+				cout << c;
+			}
+		cout << endl;
+	}
+
+	return 0;
+}

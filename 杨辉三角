@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int i, j;
+	int y[6][6] = { 0 };
+	for (j = 0;j <= 5;j++)
+	{
+		y[j][0] = 1;
+		y[j][j] = 1;
+	}
+	for (j = 2;j < 6;j++)
+		for (i = 1;i < j;i++)
+		{
+			y[j][i] = y[j - 1][i - 1] + y[j - 1][i];
+		}
+	cout << "array y:" << endl;
+	for (j = 0;j <= 5;j++)
+	{
+		for (i = 0;i <= j;i++)
+		{
+			cout << setw(4) << y[j][i];
+		}
+		cout << endl;
+	}
+	return 0;
+}

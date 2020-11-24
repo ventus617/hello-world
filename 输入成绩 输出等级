@@ -1,33 +1,35 @@
-#include<bits/stdc++.h>                       //万能头文件
+#include<iostream>
 using namespace std;
-
 int main()
-{   
-    double grade;
-    int t;
-    printf("Please Enter your grade\n");
-    cin >> grade;
-    t = grade / 10;
-    switch (t)
+{
+    int a,b;
+    cin>>a;
+    if(a<=100&&a>=0)
     {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:cout << "Your grade is E";
-        break;
-    case 6:cout << "Your grade is D";
-        break;
-    case 7:cout << "Your grade is C";
-        break;
-    case 8:cout << "Your grade is B";
-        break;
-    case 9:
-    case 10:cout <<"Your grade is A";
-        break;
-    default:cout << "Null";
-        
+    b=a/10;
+    switch(b)
+    {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:cout<<"E";
+            break;
+        case 6:cout<<"D";
+            break;
+        case 7:cout<<"C";
+            break;
+        case 8:cout<<"B";
+            break;
+        case 9:
+        case 10:cout<<"A";
+            break;
+        default:
+            break;
     }
-
+    }
+    else
+        cout<<"F";
     return 0;
 }

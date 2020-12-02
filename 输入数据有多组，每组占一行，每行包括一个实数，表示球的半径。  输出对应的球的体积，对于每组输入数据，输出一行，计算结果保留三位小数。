@@ -1,0 +1,22 @@
+#include<iostream>
+#define PI 3.1415927
+using namespace std;
+int main()
+{
+	double r;
+	
+	while (scanf("%lf", &r) != EOF)
+	{
+		double v;
+		v = 4.0 / 3.0 * PI * pow(r, 3);
+		printf("%.3f\n", v);
+	}
+}
+如果题目没有说明有多少组，我们应该这么输入：
+
+while(~scanf("%s",str)){}
+while(scanf("%s",str)!=EOF){}
+ 或者：
+
+while(cin>>str){}
+注意波浪号~
